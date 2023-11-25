@@ -4,11 +4,10 @@ from math import sqrt
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
-
 def is_prime(task):
 	i = 2
 	while i <= sqrt(task):
-		if task % i == 0:
+		if (task % i) == 0:
 			correct_answer = 'no'
 			return correct_answer
 		else:
