@@ -8,15 +8,16 @@ def is_prime(task):
 	i = 2
 	while i <= sqrt(task):
 		if (task % i) == 0:
-			correct_answer = 'no'
-			return correct_answer
-		else:
-			i += 1
-			correct_answer = 'yes'
-	return correct_answer
+			return False
+	return True
 
 def make_question():
 	task = randint(0,100)
-	correct_answer = is_prime(task)
+	flag = is_prime(task)
+	if flag == True:
+		correct_answer = 'yes'
+	else:
+		correct_answer = 'no'
+
 	return correct_answer, task
 
