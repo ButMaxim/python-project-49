@@ -13,7 +13,7 @@ def is_prime(task):
     return True
 
 def make_question():
-	task = randint(0,100)
+	task = randint(2,99)
 	flag = is_prime(task)
 	if flag == True:
 		correct_answer = 'yes'
