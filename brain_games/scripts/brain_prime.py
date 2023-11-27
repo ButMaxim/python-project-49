@@ -3,5 +3,4 @@ from brain_games.games import prime
 
 
 def main():
-	start_game(prime)
-
+    start_game(prime)

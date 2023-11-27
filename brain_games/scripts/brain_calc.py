@@ -3,5 +3,4 @@ from brain_games.games import calc
 
 
 def main():
-	start_game(calc)
-
+    start_game(calc)

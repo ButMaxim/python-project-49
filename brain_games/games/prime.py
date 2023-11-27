@@ -4,6 +4,7 @@ from math import sqrt
 
 DESCRIPTION = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def is_prime(task):
     i = 2
     while i <= sqrt(task):
@@ -12,13 +13,13 @@ def is_prime(task):
         i += 1
     return True
 
+
 def make_question():
-	task = randint(2,99)
-	flag = is_prime(task)
-	if flag == True:
-		correct_answer = 'yes'
-	else:
-		correct_answer = 'no'
+    task = randint(2, 99)
+    flag = is_prime(task)
+    if flag is True:
+        correct_answer = 'yes'
+    else:
+        correct_answer = 'no'
 
-	return correct_answer, task
-
+    return correct_answer, task
