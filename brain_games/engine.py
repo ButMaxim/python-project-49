@@ -28,4 +28,4 @@ def start_game(game):
                   f"\nLet's try again, {name}!")
 			return
 
-	print('Congratulations, ' + name)
+	print(f'Congratulations, {name}!')
